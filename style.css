@@ -1,0 +1,21 @@
+main {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto;
+    gap: 1px;
+    padding: 2px;
+}
+  
+main > div {
+    background-color: purple;
+    text-align: center;
+    padding: 5px 0;
+    font-size: 30px;   
+}
+div{
+    height: 500px;
+    width: 200px;
+    color: antiquewhite;
+}
+div:is(:hover, :focus-within){
+    filter: grayscale();
+}
