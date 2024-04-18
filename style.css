@@ -1,7 +1,7 @@
 * {
  box-sizing: initial;
 }
-
+@import url('https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap');
 #header{
     height: 50px;
     width: 100vw;
@@ -94,12 +94,13 @@ margin: 0px;
   background-position:center;
   padding: 0px;
   align-items: center;
+  position: relative;
 }
 
 #filtroSecao{
   width: inherit;
   height: inherit;
   background-color: black;
-  opacity: 0.5;
-
+  opacity: 1;
+  position: absolute;
 }
