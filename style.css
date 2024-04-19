@@ -1,238 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap');
+
 * {
-    box-sizing: initial;
-    margin: auto;
-   }
-    @import url('https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap');
-   #header{
-       height: 50px;
-       width: 100vw;
-       background-color: #7B9898;
-       border-radius: 4px;
-       display: grid;
-       align-items: center;
-       justify-content: center;
-   }
-   #github{
-       height: 20px;
-       width: 20px;
-       margin-left: 90vw;
-       margin-bottom: 90v;
-   }
-   .vollkorn-title{
-    font-family: "Vollkorn", serif;
-    font-optical-sizing: auto;
-    font-weight: bold;
-    font-style: unset;
-    font-size: 20px;
-    color: #fff;
-    text-align: center;
-    text-transform: capitalize;
-    font-size: 50px;
+  box-sizing: initial;
+  margin: auto;
+}
 
-   }
-   #bodyIndex {
-     display: grid;
-     place-items: center;
-     min-height: 100vh;
-     background: #4963a0;
-     font-family: "Vo";
-   }
-   
-   :root {
-     --magnifier: 2;
-     --gap: 2px;
-     --transition: 0.5s;
-    
-   }
-   
-   .container {
-     width: 80vw;
-     height: 80vmin;
-     display: inline-flex;
-     align-items: center;
-     justify-content: center;
-     gap: 1px;
-     position: relative;
-     box-shadow: 5px 2px rgb(12, 11, 11);
-      
-   }
-   
-   img {
-     --brightness: 1;
-     --grayscale: 0.8;
-     transition: flex var(--transition),  filter var(--transition);
-     height: 100%;
-     filter: grayscale(var(--grayscale)) brightness(var(--brightness));
-     object-fit: cover;
-     overflow: hidden;
-     flex: 1;
-     box-shadow:
-      black;
-      opacity: 1;
-   }
-   
-   img:hover{
-     --brightness: 1.15;
-     --grayscale: 0;
-     flex: var(--magnifier);
-     --left:40px;
-     --value: -1;
-   }
+:root {
+  --magnifier: 2;
+  --gap: 2px;
+  --transition: 0.5s;
 
-   .animal-text{
-     opacity: var(--opacity);
-     position: absolute;
-     bottom: 0;
-     --left:0px;
-     left: 0;
-     padding-left: 20px;
-     color: rgb(255, 255, 255);
-     font-size: 30px;
-     --opacity:0;
-     pointer-events: none;
-     background-color: rgba(0, 0, 0,0.7);
-     transition: 1s;
-     width: 25%;
-     text-align: center;
-   }
+}
 
-   img:hover+ .animal-text{
-     --opacity: 1;
-   }
-   img:hover+ .sports{
-    --opacity: 1;
-  }
-   .sports{
-    opacity: var(--opacity);
-    position: absolute;
-    bottom: 0;
-    left: 12%;
-    transition: 1s;
-    padding-left: 20px;
-    color: rgb(255, 255, 255);
-    font-size: 30px;
-    background-color: rgba(0, 0, 0,0.7);
-    --opacity:0;
-    width: 24.6%;
-    text-align: center;
-   }
-   .technology{
-    opacity: var(--opacity);
-    position: absolute;
-    bottom: 0;
-    left: 25%;
-    transition: 1s;
-    padding-left: 20px;
-    color: rgb(255, 255, 255);
-    font-size: 30px;
-    background-color: rgba(0, 0, 0,0.7);
-    --opacity:0;
-    width: 23%;
-    text-align: center;
-   }
-   img:hover+ .technology{
-    --opacity:1;
-   }
-   .paisage{
-    opacity: var(--opacity);
-    position: absolute;
-    bottom: 0;
-    left: 37.5%;
-    transition: 1s;
-    padding-left: 20px;
-    color: rgb(255, 255, 255);
-    font-size: 30px;
-    background-color: rgba(0, 0, 0,0.7);
-    --opacity:0;
-    width: 23.1%;
-    text-align: center;
-   }
-   img:hover+ .paisage{
-    --opacity:1;
-   }
-   .nature{
-    opacity: var(--opacity);
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transition: 1s;
-    padding-left: 20px;
-    color: rgb(255, 255, 255);
-    font-size: 30px;
-    background-color: rgba(0, 0, 0,0.7);
-    --opacity:0;
-    width: 23%;
-    text-align: center;
-   }
-   img:hover+ .nature{
-    --opacity:1;
-   }
+#header{
+  height: 50px;
+  width: 100vw;
+  background-color: #7B9898;
+  border-radius: 4px;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+#github{
+  height: 20px;
+  width: 20px;
+  margin-left: 90vw;
+}
+.vollkorn-title{
+  font-family: "Vollkorn", serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: unset;
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 50px;
 
-   img:hover+ .nature{
-    --opacity:1;
-   }
-   .urban{
-    opacity: var(--opacity);
-    position: absolute;
-    bottom: 0;
-    left: 64%;
-    transition: 1s;
-    padding-left: 20px;
-    color: rgb(255, 255, 255);
-    font-size: 30px;
-    background-color: rgba(0, 0, 0,0.7);
-    --opacity:0;
-    width: 22%;
-    text-align: center;
-   }
-   img:hover+ .urban{
-    --opacity:1;
-   }
-   .cars{
-    opacity: var(--opacity);
-    position: absolute;
-    bottom: 0;
-    left: 75%;
-    transition: 1s;
-    padding-left: 20px;
-    color: rgb(255, 255, 255);
-    font-size: 30px;
-    background-color: rgba(0, 0, 0,0.7);
-    --opacity:0;
-    width: 23%;
-    text-align: center;
-   }
-   img:hover+ .cars{
-    --opacity:1;
-   }
+}
+#bodyIndex {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  background: #4963a0;
+  font-family: "Vo";
+}
 
-   
-   
-   #secaoVeiculos{
-     background-color: black;
-     padding: 10px;
-     
-   }
-   
-   #bodyVeiculos{
-   margin: 0px;
-   }
-   
-   #secaoVeiculos{
-     background-image: url('https://images.unsplash.com/photo-1506015391300-4802dc74de2e?q=80&w=959&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA==');
-     height: 550px;
-     background-repeat: no-repeat;
-     background-size:cover;
-     background-position:center;
-     padding: 0px;
-     align-items: center;
-     position: relative;
-   }
-   
-   #filtroSecao{
-     width: inherit;
-     height: inherit;
-     background-color: black;
-     opacity: 1;
-     position: absolute;
-   }
+
+
+.container {
+  width: 80vw;
+  height: 80vmin;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1px;
+  position: relative;
+  box-shadow: 5px 2px rgb(12, 11, 11);
+
+}
+
+img {
+  --brightness: 1;
+  --grayscale: 0.8;
+  transition: flex var(--transition),  filter var(--transition);
+  height: 100%;
+  filter: grayscale(var(--grayscale)) brightness(var(--brightness));
+  object-fit: cover;
+  overflow: hidden;
+  flex: 1;
+  box-shadow:
+  black;
+  opacity: 1;
+}
+
+.animal-text{
+  opacity: var(--opacity);
+  position: absolute;
+  bottom: 0;
+  --left:0px;
+  left: 0;
+  padding-left: 20px;
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  --opacity:0;
+  pointer-events: none;
+  background-color: rgba(0, 0, 0,0.7);
+  transition: 1s;
+  width: 25%;
+  text-align: center;
+}
+
+.sports{
+  opacity: var(--opacity);
+  position: absolute;
+  bottom: 0;
+  left: 12%;
+  transition: 1s;
+  padding-left: 20px;
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  background-color: rgba(0, 0, 0,0.7);
+  --opacity:0;
+  width: 24.6%;
+  text-align: center;
+}
+
+.technology{
+  opacity: var(--opacity);
+  position: absolute;
+  bottom: 0;
+  left: 25%;
+  transition: 1s;
+  padding-left: 20px;
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  background-color: rgba(0, 0, 0,0.7);
+  --opacity:0;
+  width: 23%;
+  text-align: center;
+}
+
+.paisage{
+  opacity: var(--opacity);
+  position: absolute;
+  bottom: 0;
+  left: 37.5%;
+  transition: 1s;
+  padding-left: 20px;
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  background-color: rgba(0, 0, 0,0.7);
+  --opacity:0;
+  width: 23.1%;
+  text-align: center;
+}
+
+.nature{
+  opacity: var(--opacity);
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transition: 1s;
+  padding-left: 20px;
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  background-color: rgba(0, 0, 0,0.7);
+  --opacity:0;
+  width: 23%;
+  text-align: center;
+}
+
+.urban{
+  opacity: var(--opacity);
+  position: absolute;
+  bottom: 0;
+  left: 64%;
+  transition: 1s;
+  padding-left: 20px;
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  background-color: rgba(0, 0, 0,0.7);
+  --opacity:0;
+  width: 22%;
+  text-align: center;
+}
+
+.cars{
+  opacity: var(--opacity);
+  position: absolute;
+  bottom: 0;
+  left: 75%;
+  transition: 1s;
+  padding-left: 20px;
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  background-color: rgba(0, 0, 0,0.7);
+  --opacity:0;
+  width: 23%;
+  text-align: center;
+}
+
+img:hover{
+  --brightness: 1.15;
+  --grayscale: 0;
+  flex: var(--magnifier);
+  --left:40px;
+  --value: -1;
+}
+
+img:hover + .animal-text,
+img:hover + .sports,
+img:hover + .technology,
+img:hover + .paisage,
+img:hover + .nature,
+img:hover + .urban,
+img:hover + .cars {
+  --opacity: 1;
+}
+
+
+#secaoVeiculos{
+background-color: black;
+padding: 10px;
+
+}
+
+#bodyVeiculos{
+margin: 0px;
+}
+
+#secaoVeiculos{
+background-image: url('https://images.unsplash.com/photo-1506015391300-4802dc74de2e?q=80&w=959&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA==');
+height: 550px;
+background-repeat: no-repeat;
+background-size:cover;
+background-position:center;
+padding: 0px;
+align-items: center;
+position: relative;
+}
+
+#filtroSecao{
+width: inherit;
+height: inherit;
+background-color: black;
+opacity: 1;
+position: absolute;
+}
