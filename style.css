@@ -68,6 +68,7 @@
      flex: 1;
      box-shadow:
       black;
+      opacity: 1;
    }
    
    img:hover{
@@ -75,6 +76,7 @@
      --grayscale: 0;
      flex: var(--magnifier);
      --left:40px;
+     --value: -1;
    }
 
    .animal-text{
@@ -86,16 +88,122 @@
      padding-left: 20px;
      color: rgb(255, 255, 255);
      font-size: 30px;
+     --opacity:0;
+     pointer-events: none;
+     background-color: rgba(0, 0, 0,0.7);
+     transition: 1s;
+     width: 25%;
+     text-align: center;
    }
+
+   img:hover+ .animal-text{
+     --opacity: 1;
+   }
+   img:hover+ .sports{
+    --opacity: 1;
+  }
    .sports{
     opacity: var(--opacity);
     position: absolute;
     bottom: 0;
-    --left:0px;
-    left: 50%;
+    left: 12%;
+    transition: 1s;
     padding-left: 20px;
     color: rgb(255, 255, 255);
     font-size: 30px;
+    background-color: rgba(0, 0, 0,0.7);
+    --opacity:0;
+    width: 24.6%;
+    text-align: center;
+   }
+   .technology{
+    opacity: var(--opacity);
+    position: absolute;
+    bottom: 0;
+    left: 25%;
+    transition: 1s;
+    padding-left: 20px;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    background-color: rgba(0, 0, 0,0.7);
+    --opacity:0;
+    width: 23%;
+    text-align: center;
+   }
+   img:hover+ .technology{
+    --opacity:1;
+   }
+   .paisage{
+    opacity: var(--opacity);
+    position: absolute;
+    bottom: 0;
+    left: 37.5%;
+    transition: 1s;
+    padding-left: 20px;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    background-color: rgba(0, 0, 0,0.7);
+    --opacity:0;
+    width: 23.1%;
+    text-align: center;
+   }
+   img:hover+ .paisage{
+    --opacity:1;
+   }
+   .nature{
+    opacity: var(--opacity);
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transition: 1s;
+    padding-left: 20px;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    background-color: rgba(0, 0, 0,0.7);
+    --opacity:0;
+    width: 23%;
+    text-align: center;
+   }
+   img:hover+ .nature{
+    --opacity:1;
+   }
+
+   img:hover+ .nature{
+    --opacity:1;
+   }
+   .urban{
+    opacity: var(--opacity);
+    position: absolute;
+    bottom: 0;
+    left: 64%;
+    transition: 1s;
+    padding-left: 20px;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    background-color: rgba(0, 0, 0,0.7);
+    --opacity:0;
+    width: 22%;
+    text-align: center;
+   }
+   img:hover+ .urban{
+    --opacity:1;
+   }
+   .cars{
+    opacity: var(--opacity);
+    position: absolute;
+    bottom: 0;
+    left: 75%;
+    transition: 1s;
+    padding-left: 20px;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    background-color: rgba(0, 0, 0,0.7);
+    --opacity:0;
+    width: 23%;
+    text-align: center;
+   }
+   img:hover+ .cars{
+    --opacity:1;
    }
 
    
