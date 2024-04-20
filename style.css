@@ -17,15 +17,36 @@
   width: 100vw;
   background-color: #7B9898;
   border-radius: 4px;
-  display: grid;
+  display: inline-block;
   align-items: center;
   justify-content: center;
 }
-#github{
-  height: 20px;
-  width: 20px;
-  margin-left: 90vw;
+
+#logo{
+  filter: blur(0);
+  height: 250px;
+  width: 250px;
+  position: relative;
+  bottom: 50px;
 }
+#github{
+  position: relative;
+  height: 30px;
+  width: 30px;
+  margin-left: 90vw;
+  filter: blur(0);
+  bottom: 220px;
+  left: 2vw;
+}
+
+#line{
+  position: relative;
+  height: 2px;
+  width: 70%;
+  bottom: -200px;
+  background-color: white;
+}
+
 .vollkorn-title{
   font-family: "Vollkorn", serif;
   font-optical-sizing: auto;
@@ -39,11 +60,14 @@
 
 }
 #bodyIndex {
+  --token-a:rgb(17,17,17);
+  --token-b: rgb(0,0,0);
   display: grid;
   place-items: center;
   min-height: 100vh;
-  background: #575759;
+  background: radial-gradient(50% 50% at 50% 0%,var(--token-a, #111111) 0%,var(--token-b, rgb(0, 0, 0)) 100%);
   font-family: "Vollkorn",Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
 }
 
 
