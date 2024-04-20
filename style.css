@@ -42,7 +42,7 @@
   display: grid;
   place-items: center;
   min-height: 100vh;
-  background: #000000;
+  background: #575759;
   font-family: "Vollkorn",Arial, Helvetica, sans-serif;
 }
 
@@ -56,22 +56,23 @@
   justify-content: center;
   gap: 1px;
   position: relative;
-  box-shadow: 5px 2px rgb(22, 20, 20);
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;;
 
 }
 
 img {
   --brightness: 1;
   --grayscale: 0.8;
+  --blur: 1.1px;
   transition: flex var(--transition),  filter var(--transition);
   height: 100%;
-  filter: grayscale(var(--grayscale)) brightness(var(--brightness));
+  filter: grayscale(var(--grayscale)) brightness(var(--brightness)) blur(var(--blur));
   object-fit: cover;
   overflow: hidden;
   flex: 1;
-  box-shadow:
-  black;
   opacity: 1;
+  cursor:pointer;
+  
 }
 
 .animal-text{
@@ -162,7 +163,7 @@ img {
   font-size: 30px;
   background-color: rgba(0, 0, 0,0.7);
   --opacity:0;
-  width: 22%;
+  width: 20%;
   text-align: center;
 }
 
@@ -187,6 +188,7 @@ img:hover{
   flex: var(--magnifier);
   --left:40px;
   --value: -1;
+  --blur: 0;
 }
 
 img:hover + .animal-text,
@@ -199,6 +201,12 @@ img:hover + .cars-text {
   --opacity: 1;
 }
 
+footer{
+  height: 300px;
+  margin-top: 200px;
+  background-color: black;
+  width: 100vw;
+}
 
 #secaoVeiculos{
 background-color: black;
