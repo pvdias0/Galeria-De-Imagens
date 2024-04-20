@@ -1,11 +1,8 @@
-function selectLink(){
-    const links = ["PagAnimais","PagCidades","PagEsportes","PagPaisagens","PagTech","PedroDias"];
+function capitalize(string){
+    return string.charAt(0).toUpperCase() + string.slice(1);
 }
-function clickedElement(){
-    
-}
-window.onclick
 
-document.querySelector("img.animals").addEventListener("click",function(ev){
-    window.location.assign("PagAnimais.html")
+document.getElementById("container").addEventListener('click' ,function(ev){
+    window.location.assign("Pag"+ (capitalize(ev.target.className))+".html");
 });
+

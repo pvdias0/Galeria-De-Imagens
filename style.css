@@ -48,7 +48,7 @@
 
 
 
-.container {
+#container {
   width: 80vw;
   height: 80vmin;
   display: inline-flex;
@@ -91,7 +91,7 @@ img {
   text-align: center;
 }
 
-.sports{
+.sports-text{
   opacity: var(--opacity);
   position: absolute;
   bottom: 0;
@@ -106,7 +106,7 @@ img {
   text-align: center;
 }
 
-.technology{
+.technology-text{
   opacity: var(--opacity);
   position: absolute;
   bottom: 0;
@@ -121,7 +121,7 @@ img {
   text-align: center;
 }
 
-.paisage{
+.paisage-text{
   opacity: var(--opacity);
   position: absolute;
   bottom: 0;
@@ -136,7 +136,7 @@ img {
   text-align: center;
 }
 
-.nature{
+.nature-text{
   opacity: var(--opacity);
   position: absolute;
   bottom: 0;
@@ -151,7 +151,7 @@ img {
   text-align: center;
 }
 
-.urban{
+.urban-text{
   opacity: var(--opacity);
   position: absolute;
   bottom: 0;
@@ -166,7 +166,7 @@ img {
   text-align: center;
 }
 
-.cars{
+.cars-text{
   opacity: var(--opacity);
   position: absolute;
   bottom: 0;
@@ -190,12 +190,12 @@ img:hover{
 }
 
 img:hover + .animal-text,
-img:hover + .sports,
-img:hover + .technology,
-img:hover + .paisage,
-img:hover + .nature,
-img:hover + .urban,
-img:hover + .cars {
+img:hover + .sports-text,
+img:hover + .technology-text,
+img:hover + .paisage-text,
+img:hover + .nature-text,
+img:hover + .urban-text,
+img:hover + .cars-text {
   --opacity: 1;
 }
 
