@@ -42,8 +42,8 @@
   display: grid;
   place-items: center;
   min-height: 100vh;
-  background: #4963a0;
-  font-family: "Vo";
+  background: #000000;
+  font-family: "Vollkorn",Arial, Helvetica, sans-serif;
 }
 
 
@@ -56,7 +56,7 @@
   justify-content: center;
   gap: 1px;
   position: relative;
-  box-shadow: 5px 2px rgb(12, 11, 11);
+  box-shadow: 5px 2px rgb(22, 20, 20);
 
 }
 
