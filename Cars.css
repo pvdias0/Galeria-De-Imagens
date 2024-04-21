@@ -1,8 +1,61 @@
-#secaoVeiculos{
-    background-color: black;
-    padding: 10px;
+
+
+#header{
+    position:fixed;
+    height: 110px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(3,10,20,0.7);
+    margin-top: -15px;
+    z-index: 1;
+}
+  
+  #logo{
+    filter: blur(0);
+    height: 150px;
+    width: 150px;
+    background-color: transparent;
+    margin-left: 15px;
+}
+  #github{
+    height: 40px;
+    width: 40px;
+    filter: blur(0);
+    margin-right: 25px;
+    margin-bottom: 15px;
     
-    }
+  }
+
+  #barraMenu{
+    
+    width: 70%;
+  }
+
+  #itensMenu{
+    
+    margin-top: 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    font-size: 20px;
+  }
+  
+
+  .itemMenu{
+    text-decoration: none;
+    color: white;
+  }
+
+  .itemMenu:hover{
+    color: gray;
+  }
+
+
     
     #bodyVeiculos{
     margin: 0px;
@@ -11,11 +64,12 @@
     
     #secaoVeiculos{
     display: flex;
-    background-image: url('https://images.unsplash.com/photo-1506015391300-4802dc74de2e?q=80&w=959&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA==');
+    flex-direction: column;
+    background-image: url('https://images.unsplash.com/photo-1593427934550-4742b652ac84?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y2Fycm9zJTIwZXNwb3J0aXZvc3xlbnwwfHwwfHx8MA%3D%3D');
     height: 550px;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position:center;
+    background-position:bottom;
     padding: 0px;
     align-items: center;
     width: 100%;
@@ -26,20 +80,19 @@
     #filtroSecao{
     width: 100%;
     height: inherit;
-    background-color: rgba(0, 0, 0,0.7);
+    background-color: rgba(0, 0, 0,0.4);
     display: flex;
     flex-wrap: wrap;
     align-content: end;
     }
     
     
-    #titulo{
+    #tituloCarros{
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
       color: white;
       font-size: 52px;
-      margin-bottom: 20px;
       width: 100%;
       height: 70px;
       align-content: center;
@@ -63,10 +116,16 @@
       position: relative;
       display: inline-block;
     }
+
+    .imagensCars-hover{
+        transform: scale(1.1);
+    }
     
     .imagensCars:hover .botoesAparecem{
       opacity: 1;
     }
+
+
     
     .botoesAparecem{
       border-radius: 13px;
@@ -78,8 +137,20 @@
     
     
     .figuras{
+        --transition: 0.5s;
       width: inherit;
       height: inherit;
+      --brightness: 1;
+      --grayscale: 0.8;
+      --blur: 1.1px;
+      transition: flex var(--transition),  filter var(--transition);
+      height: 100%;
+      filter: grayscale(var(--grayscale)) brightness(var(--brightness)) blur(var(--blur));
+      object-fit: cover;
+      overflow: hidden;
+      flex: 1;
+      opacity: 1;
+      cursor:pointer;
     }
     
     .hoverDefigurasPorBotoes{
@@ -88,32 +159,43 @@
     
     .figuras:hover{
      transform: scale(1.1);
-      
-      
+     --brightness: 1.15;
+     --grayscale: 0;
+     flex: var(--magnifier);
+     --left:40px;
+     --value: -1;
+     --blur: 0;
     }
-    
-    .botoesDownload{
-      position: absolute;
-      bottom: 1%;
-      left: 10%;
-      width: 80px;
-      height: 30px;
-      opacity: 0;
-      cursor:pointer;
+
+    .figuras-hover{
+     transform: scale(1.1);
+     --brightness: 1.15;
+     --grayscale: 0;
+     flex: var(--magnifier);
+     --left:40px;
+     --value: -1;
+     --blur: 0
     }
-    
-    
+
+    .botao-link{
+        text-decoration: none;
+    }
     
     .botoesAbrir{
       position: absolute;
       bottom:1%;
-      right: 10%;
+      right: 40%;
       opacity: 0;
       width: 80px;
       height: 30px;
       opacity: 0;
       cursor:pointer;
-    
+    }
+
+    .botoesAbrir:hover{
+        border: 2px solid #010109;
+        background-color: #C9D5F0;
+        color: #031020;
     }
     
     ::-webkit-scrollbar{

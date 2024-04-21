@@ -100,7 +100,7 @@ img {
 }
 
 .animal-text, .sports-text,
-.technology-text,.nature-text,
+.technology-text,.house-text,
 .urban-text,.cars-text
 ,.paisage-text{
   opacity: var(--opacity);
@@ -140,7 +140,7 @@ img {
   width: 23.1%;
 }
 
-.nature-text{
+.house-text{
   left: 50%;
   width: 23%;
 }
@@ -169,7 +169,7 @@ img:hover + .animal-text,
 img:hover + .sports-text,
 img:hover + .technology-text,
 img:hover + .paisage-text,
-img:hover + .nature-text,
+img:hover + .house-text,
 img:hover + .urban-text,
 img:hover + .cars-text {
   --opacity: 1;
@@ -224,6 +224,7 @@ label{
   transform: translate(30vw, 20vh);
   font-size: 24px;
   color: #000000;
+  padding-left: 10px;
 }
 
 footer{
