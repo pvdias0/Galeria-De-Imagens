@@ -99,7 +99,10 @@ img {
   
 }
 
-.animal-text{
+.animal-text, .sports-text,
+.technology-text,.nature-text,
+.urban-text,.cars-text
+,.paisage-text{
   opacity: var(--opacity);
   position: absolute;
   bottom: 0;
@@ -114,96 +117,43 @@ img {
   transition: 1s;
   width: 25%;
   text-align: center;
+  cursor: none;
+}
+
+.animal-text{
+  left:0;
+  width: 25%;
 }
 
 .sports-text{
-  opacity: var(--opacity);
-  position: absolute;
-  bottom: 0;
   left: 12%;
-  transition: 1s;
-  padding-left: 20px;
-  color: rgb(255, 255, 255);
-  font-size: 30px;
-  background-color: rgba(0, 0, 0,0.7);
-  --opacity:0;
   width: 24.6%;
-  text-align: center;
 }
 
 .technology-text{
-  opacity: var(--opacity);
-  position: absolute;
-  bottom: 0;
   left: 25%;
-  transition: 1s;
-  padding-left: 20px;
-  color: rgb(255, 255, 255);
-  font-size: 30px;
-  background-color: rgba(0, 0, 0,0.7);
-  --opacity:0;
   width: 23%;
-  text-align: center;
 }
 
 .paisage-text{
-  opacity: var(--opacity);
-  position: absolute;
-  bottom: 0;
   left: 37.5%;
-  transition: 1s;
-  padding-left: 20px;
-  color: rgb(255, 255, 255);
-  font-size: 30px;
-  background-color: rgba(0, 0, 0,0.7);
-  --opacity:0;
   width: 23.1%;
-  text-align: center;
 }
 
 .nature-text{
-  opacity: var(--opacity);
-  position: absolute;
-  bottom: 0;
   left: 50%;
-  transition: 1s;
-  padding-left: 20px;
-  color: rgb(255, 255, 255);
-  font-size: 30px;
-  background-color: rgba(0, 0, 0,0.7);
-  --opacity:0;
   width: 23%;
-  text-align: center;
 }
 
 .urban-text{
-  opacity: var(--opacity);
-  position: absolute;
-  bottom: 0;
   left: 64%;
-  transition: 1s;
-  padding-left: 20px;
-  color: rgb(255, 255, 255);
-  font-size: 30px;
-  background-color: rgba(0, 0, 0,0.7);
-  --opacity:0;
   width: 20%;
-  text-align: center;
+
 }
 
-.cars-text{
-  opacity: var(--opacity);
-  position: absolute;
-  bottom: 0;
+.cars-text{ 
   left: 75%;
-  transition: 1s;
-  padding-left: 20px;
-  color: rgb(255, 255, 255);
-  font-size: 30px;
-  background-color: rgba(0, 0, 0,0.7);
-  --opacity:0;
   width: 23%;
-  text-align: center;
 }
 
 img:hover{
@@ -223,6 +173,57 @@ img:hover + .nature-text,
 img:hover + .urban-text,
 img:hover + .cars-text {
   --opacity: 1;
+}
+form{
+  position: relative;
+}
+#side-text{
+  position: absolute;
+  transform: translate(39vw, -12vh);
+  font-size: 40px;
+}
+
+label{
+  font-weight: bolder;
+  font-family: 'VOllkorn', Helvetica, sans-serif;
+  font-size: 50px;
+  color: white;
+  transform: translate(15vw, -8vh);
+  position: absolute;
+}
+.line-column{
+  position: relative;
+  transform: translate(-13vw, 35vh);
+  width: 2px;
+  height: 100px;
+  background-color: white;
+
+}
+
+.submit{
+  background: #131212;
+	padding: 10px;
+	border: none;
+	width: 100px;
+	height: 40px;
+	border-radius: 5px;
+	font-size: 18px;
+	color: white;
+	box-shadow: 0 4px 20px rgb(39, 39, 43);
+  transform: translate(32vw, 19vh);
+  cursor: pointer;
+}
+
+.submit:hover{
+  background-color: #000000;
+}
+#mail{
+  width: 500px;
+  height: 50px;
+  position: relative;
+  transform: translate(30vw, 20vh);
+  font-size: 24px;
+  color: #000000;
 }
 
 footer{

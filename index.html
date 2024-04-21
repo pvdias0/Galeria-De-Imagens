@@ -9,7 +9,7 @@
 <body id='bodyIndex'> 
     <header>
         <img id="logo" src="image/logo.png" alt="img">
-        <a href=""><abbr title="github"><img src="image/github-mark-white.png" id="github" alt="img"/></abbr></a>
+        <a href="https://github.com/pvdias0/teste" target="_blank"><abbr title="github"><img src="image/github-mark-white.png" id="github" alt="img"/></abbr></a>
     </header>  
     <section>
         <div name="container" id="container">
@@ -30,9 +30,15 @@
         </div>
     </section>
     <div id="line"></div>
+    <div class="line-column"></div>
     <footer>
-        <form action=""></form>
-    </footer>
+        <form method="dialog" novalidate>
+            <label for="mail">Newsletter</label>
+            <label id="side-text">Cadastre-se <br>e receba a nossa newsletter</label>
+            <input type="email" placeholder="Insira Seu Email" name="email" id="mail"/>
+            <button onclick="btnClicked()" class="submit">Inscrever-se</button>
+        </form>  
+    </footer> 
     <script src="main.js"></script>
 </body>
 </html>
