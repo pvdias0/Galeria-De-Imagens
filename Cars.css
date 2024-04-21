@@ -31,22 +31,22 @@
   }
 
   #barraMenu{
-    
     width: 70%;
   }
 
   #itensMenu{
-    
     margin-top: 0px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-around;
     font-size: 20px;
+    padding-left: 0px;
   }
   
 
   .itemMenu{
+    font-size: 25px;
     text-decoration: none;
     color: white;
   }
@@ -210,4 +210,41 @@
     
     ::-webkit-scrollbar-thumb:hover{
       background-color: #031020;
+    }
+
+    #footer{
+      padding-top: 50px;
+      margin-top: 30px ;
+      height: 400px;
+      width: 100%;
+      background-color: rgb(19, 19, 19);
+    }
+
+    #itensFooter{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      height: 300px;
+      width: 100%;
+     
+    }
+
+
+    .itemFooter{
+      margin: 7px;
+    }
+
+    .titulosFooter{
+      color: darkgray;
+      margin-bottom: 15px;
+    }
+
+  
+
+    .linkFooter{
+      text-decoration: none;
+      color: gray;
+    }
+    .linkFooter:hover{
+      color: blue;
     }
