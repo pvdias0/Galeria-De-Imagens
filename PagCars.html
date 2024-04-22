@@ -19,7 +19,7 @@
                <li><a class="itemMenu" href="PagAnimals.html">Animais</a></li>
                <li><a class="itemMenu" href="Pagsports.html">Esportes</a></li>
                <li><a class="itemMenu" href="PagTechnology.html">Tecnologia</a></li>
-               <li><a class="itemMenu" href="PagFood.html">Paisagens</a></li>
+               <li><a class="itemMenu" href="PagFood.html">Comidas</a></li>
                <li><a class="itemMenu" href="PagHouse.html">Casas</a></li>
                <li><a class="itemMenu" href="PagUrbans.html">Urbano</a></li>
             </ul>
@@ -442,6 +442,10 @@
             <button class="botoesAbrir botoesAparecem">Abrir</button>
          </a>
       </div>
+      <div id="divBotaoSeta">
+         <button id="botaoSeta"><img class='seta' width="40px" height="40px" src="image/seta-png.png" alt=""></button>
+         <label for="botaoSeta" id="labelSeta">Voltar ao topo</label>
+      </div>
    </section>
    <footer id="footer">
       <div id="itensFooter">
@@ -451,7 +455,7 @@
             <li class="itemFooter"><a class="linkFooter" href="PagAnimals.html">Animais</a></li>
             <li class="itemFooter"><a class="linkFooter" href="Pagsports.html">Esportes</a></li>
             <li class="itemFooter"><a class="linkFooter" href="PagTechnology.html">Tecnologia</a></li>
-            <li class="itemFooter"><a class="linkFooter" href="PagFood.html">Paisagens</a></li>
+            <li class="itemFooter"><a class="linkFooter" href="PagFood.html">Comidas</a></li>
             <li class="itemFooter"><a class="linkFooter" href="PagHouse.html">Casas</a></li>
             <li class="itemFooter"><a class="linkFooter" href="#secaoVeiculos">Carros</a></li>
          </ul>
@@ -491,6 +495,18 @@
             imgCorrespondente.classList.remove('figuras-hover')
          })
 
+      })
+
+      document.addEventListener('DOMContentLoaded', function(){
+         const botaoSeta = document.querySelector('#botaoSeta');
+         const ancoraSeta = document.getElementById('secaoVeiculos');
+
+         botaoSeta.addEventListener('click', function(){
+            window.scrollTo({
+               top:ancoraSeta.offsetTop, behavior:"smooth"
+            });
+         })
+         
       })
    </script>
 </body>
