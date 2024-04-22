@@ -65,7 +65,7 @@
     #secaoCasas{
     display: flex;
     flex-direction: column;
-    background-image: url('https://images.unsplash.com/photo-1593427934550-4742b652ac84?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y2Fycm9zJTIwZXNwb3J0aXZvc3xlbnwwfHwwfHx8MA%3D%3D');
+    background-image: url('https://images.unsplash.com/photo-1605276373954-0c4a0dac5b12?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
     height: 550px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -218,6 +218,34 @@
       background-color: rgb(19, 19, 19);
     }
 
+    #divBotaoSeta{
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 30px;
+      
+    }
+    #botaoSeta{
+      
+      border: 0px;
+      border-radius: 3000px;
+      background-color: #051c38;
+      height: 60px;
+      width: 60px;
+      margin-bottom: 10px;
+      box-shadow: 0px 0px 10px rgb(17, 17, 17)
+      
+    }
+    #labelSeta{
+      color: beige;
+      margin-left: 0px;
+      margin-bottom: 6px;
+    }
+    #botaoSeta:hover{
+      transform: scale(1.2);
+      box-shadow: 0px 0px 10px beige;
+    }
     #itensFooter{
       display: flex;
       flex-wrap: wrap;
@@ -226,7 +254,7 @@
       width: 100%;
      
     }
-
+ 
     .itemFooter{
       margin: 7px;
     }
