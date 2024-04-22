@@ -2,7 +2,7 @@ function capitalize(string){
     return string.charAt(0).toUpperCase() + string.slice(1);
 }
 function containsSpecialChar(string){
-    return string.indexOf("@") == -1 ? false : string.indexOf(".com")== -1 ? false:true;
+    return string.indexOf("@") == -1 ? false : string.indexOf(".") == -1 ? false: true;
 }
 document.getElementById("container").addEventListener('click' ,function(ev){
     window.location.assign("Pag"+ (capitalize(ev.target.className))+".html");
