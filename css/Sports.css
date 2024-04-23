@@ -55,17 +55,16 @@
     color: gray;
   }
 
-
-    
     #bodyVeiculos{
     margin: 0px;
     background-color: #010109 ;
+    position: absolute;
     }
     
     #secaoVeiculos{
     display: flex;
     flex-direction: column;
-    background-image: url('https://images.pexels.com/photos/1619860/pexels-photo-1619860.jpeg?auto=compress&cs=tinysrgb&w=600');
+
     height: 550px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -75,6 +74,7 @@
     width: 100%;
     background-attachment: fixed;
     margin-bottom: 30px;
+
     }
     
     #filtroSecao{
@@ -115,6 +115,7 @@
       background-color: grey;
       position: relative;
       display: inline-block;
+      left: 200px;
     }
 
     .imagensCars-hover{
