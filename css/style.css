@@ -14,8 +14,6 @@
   background-color: #7B9898;
   border-radius: 4px;
   display: inline-block;
-  align-items: center;
-  justify-content: center;
 }
 
 #logo{
@@ -76,7 +74,6 @@
   justify-content: center;
   gap: 1px;
   position: relative;
-  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;;
 
 }
 
@@ -84,7 +81,7 @@ img {
   --brightness: 1;
   --grayscale: 0.8;
   --blur: 1.1px;
-  transition: flex var(--transition),  filter var(--transition);
+  transition: flex var(--transition);
   height: 100%;
   filter: grayscale(var(--grayscale)) brightness(var(--brightness)) blur(var(--blur));
   object-fit: cover;
