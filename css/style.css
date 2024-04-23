@@ -32,6 +32,12 @@
   bottom: 220px;
   left: 2vw;
 }
+a{
+  width: fit-content;
+  height: fit-content;
+  cursor: default;
+  z-index: -2;
+}
 
 #line{
   position: relative;
