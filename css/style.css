@@ -94,8 +94,8 @@ img {
 
 .animal-text, .sports-text,
 .technology-text,.house-text,
-.urban-text,.cars-text
-,.paisage-text{
+.urbans-text,.cars-text
+,.food-text{
   opacity: var(--opacity);
   position: absolute;
   bottom: 0;
@@ -128,7 +128,7 @@ img {
   width: 23%;
 }
 
-.paisage-text{
+.food-text{
   left: 37.5%;
   width: 23.1%;
 }
@@ -138,7 +138,7 @@ img {
   width: 23%;
 }
 
-.urban-text{
+.urbans-text{
   left: 62%;
   width: 25%;
   text-align: center;
@@ -161,9 +161,9 @@ img:hover{
 img:hover + .animal-text,
 img:hover + .sports-text,
 img:hover + .technology-text,
-img:hover + .paisage-text,
+img:hover + .food-text,
 img:hover + .house-text,
-img:hover + .urban-text,
+img:hover + .urbans-text,
 img:hover + .cars-text {
   --opacity: 1;
 }
