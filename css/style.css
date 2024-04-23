@@ -98,7 +98,7 @@ img {
 .animal-text, .sports-text,
 .technology-text,.house-text,
 .urban-text,.cars-text
-,.comidas-text{
+,.food-text{
   opacity: var(--opacity);
   position: absolute;
   bottom: 0;
@@ -131,7 +131,7 @@ img {
   width: 23%;
 }
 
-.comidas-text{
+.food-text{
   left: 37.5%;
   width: 23.1%;
 }
@@ -164,7 +164,7 @@ img:hover{
 img:hover + .animal-text,
 img:hover + .sports-text,
 img:hover + .technology-text,
-img:hover + .comidas-text,
+img:hover + .food-text,
 img:hover + .house-text,
 img:hover + .urban-text,
 img:hover + .cars-text {
