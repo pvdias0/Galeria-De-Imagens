@@ -36,7 +36,7 @@ a{
   width: fit-content;
   height: fit-content;
   cursor: default;
-  z-index: -2;
+  z-index: -1;
 }
 
 #line{
