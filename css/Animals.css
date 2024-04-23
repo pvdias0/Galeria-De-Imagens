@@ -1,6 +1,6 @@
 #header{
-  position:fixed;
-  height: 110px;
+  position:relative;
+  height: 90px;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -8,7 +8,7 @@
   justify-content: space-between;
   align-items: center;
   background-color: rgba(3,10,20,0.7);
-  margin-top: -15px;
+  margin-top: 0;
   z-index: 1;
   }
   
@@ -72,13 +72,13 @@
   align-items: center;
   width: 100%;
   background-attachment: fixed;
-  margin-bottom: 30px;
+  margin-bottom: -600px;
 }
 
 #filtroSecao{
   width: 100%;
   height: inherit;
-  bottom: -485px;
+  bottom: -4px;
   background-color: rgba(0, 0, 0,0.4);
   display: flex;
   flex-wrap: wrap;
