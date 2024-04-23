@@ -10,5 +10,5 @@ Um pequeno projeto para a disciplina de programação web.
 
 - [@Andre-PI](https://www.github.com/Andre-PI)
 
-- [@sindeto](https://www.github.com/Andre-PI)
+- [@sindeto](https://www.github.com/sindeto)
 
