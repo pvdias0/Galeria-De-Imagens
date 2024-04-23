@@ -80,7 +80,6 @@
     #filtroSecao{
     width: 100%;
     height: inherit;
-    background-color: rgba(0, 0, 0,0.4);
     display: flex;
     flex-wrap: wrap;
     align-content: end;
