@@ -237,7 +237,7 @@
       margin-bottom: 6px;
     }
     #botaoSeta:hover{
-      transform: scale(1.1);
+      transform: scale(1.2);
       box-shadow: 0px 0px 10px beige;
       cursor: pointer;
     }

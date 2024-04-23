@@ -57,15 +57,15 @@
 
 
     
-    #bodyUrbano{
+    #bodyVeiculos{
     margin: 0px;
     background-color: #010109 ;
     }
     
-    #secaoUrbano{
+    #secaoVeiculos{
     display: flex;
     flex-direction: column;
-    background-image: url('https://images.pexels.com/photos/137077/pexels-photo-137077.jpeg');
+    background-image: url('https://images.pexels.com/photos/1619860/pexels-photo-1619860.jpeg?auto=compress&cs=tinysrgb&w=600');
     height: 550px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -87,7 +87,7 @@
     }
     
     
-    #tituloUrbano{
+    #tituloCarros{
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
@@ -99,7 +99,7 @@
       background-color: rgba(1, 1, 9,0.7);
     }
     
-    #urbanoCollection{
+    #imagensVeiculos{
       height: auto;
       width: 100%;
       display: flex;
@@ -108,7 +108,7 @@
       justify-content: space-evenly;
     }
     
-    .imagensUrbano{
+    .imagensCars{
       width: 400px;
       height: 300px;
       margin: 15px;
@@ -116,8 +116,12 @@
       position: relative;
       display: inline-block;
     }
+
+    .imagensCars-hover{
+        transform: scale(1.1);
+    }
     
-    .imagensUrbano:hover .botoesAparecem{
+    .imagensCars:hover .botoesAparecem{
       opacity: 1;
     }
 
@@ -147,6 +151,10 @@
       flex: 1;
       opacity: 1;
       cursor:pointer;
+    }
+    
+    .hoverDefigurasPorBotoes{
+      transform: scale(1.1);
     }
     
     .figuras:hover{
@@ -229,7 +237,7 @@
       margin-bottom: 6px;
     }
     #botaoSeta:hover{
-      transform: scale(1.1);
+      transform: scale(1.2);
       box-shadow: 0px 0px 10px beige;
       cursor: pointer;
     }
