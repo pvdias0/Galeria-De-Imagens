@@ -97,7 +97,7 @@ img {
 
 .animal-text, .sports-text,
 .technology-text,.house-text,
-.urban-text,.cars-text
+.urbans-text,.cars-text
 ,.food-text{
   opacity: var(--opacity);
   position: absolute;
@@ -141,7 +141,7 @@ img {
   width: 23%;
 }
 
-.urban-text{
+.urbans-text{
   left: 62%;
   width: 25%;
   text-align: center;
@@ -166,7 +166,7 @@ img:hover + .sports-text,
 img:hover + .technology-text,
 img:hover + .food-text,
 img:hover + .house-text,
-img:hover + .urban-text,
+img:hover + .urbans-text,
 img:hover + .cars-text {
   --opacity: 1;
 }
