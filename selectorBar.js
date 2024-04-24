@@ -30,6 +30,9 @@ downloadButton.addEventListener("click", fnc =>{
 function onMove(){
     window.scrollBy(100,100);
 }
+document.addEventListener("click", function(){
+    downloadList.length >= 1 ? closeButton.innerHTML = "Remover" : closeButton.innerHTML = "Fechar";
+})
 document.addEventListener("click",function(ev){
     let event = ev.target;
     if (event.classList.contains("figuras") && !downloadList.includes(event.src)){
@@ -42,6 +45,3 @@ document.addEventListener("click",function(ev){
     }
 })
 
-document.addEventListener("scroll", ev => {
-    document.body.style.overflow = "none";
-})
