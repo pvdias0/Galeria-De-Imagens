@@ -57,12 +57,12 @@
 
 
     
-    #bodyVeiculos{
+    #bodyFood{
     margin: 0px;
     background-color: #010109 ;
     }
     
-    #secaoVeiculos{
+    #secaoFood{
     display: flex;
     flex-direction: column;
     background-image: url('https://images.pexels.com/photos/1128678/pexels-photo-1128678.jpeg?auto=compress&cs=tinysrgb&w=600');
@@ -86,7 +86,7 @@
     }
     
     
-    #tituloCarros{
+    #tituloFood{
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
@@ -98,7 +98,7 @@
       background-color: rgba(1, 1, 9,0.7);
     }
     
-    #imagensVeiculos{
+    #imagensFood{
       height: auto;
       width: 100%;
       display: flex;
@@ -107,7 +107,7 @@
       justify-content: space-evenly;
     }
     
-    .imagensCars{
+    .imagensFood{
       width: 400px;
       height: 300px;
       margin: 15px;
@@ -116,11 +116,11 @@
       display: inline-block;
     }
 
-    .imagensCars-hover{
+    .imagensFood-hover{
         transform: scale(1.1);
     }
     
-    .imagensCars:hover .botoesAparecem{
+    .imagensFood:hover .botoesAparecem{
       opacity: 1;
     }
 
