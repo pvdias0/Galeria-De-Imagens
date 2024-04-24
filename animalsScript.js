@@ -23,5 +23,4 @@ document.addEventListener('DOMContentLoaded', function(){
         top:ancoraSeta.offsetTop, behavior:"smooth"
     });
     })
-    
 })
