@@ -123,10 +123,6 @@
     position: relative;
     display: inline-block;
   }
-
-  .animalImage-hover{
-      transform: scale(1.1);
-  }
   
   .animalImage:hover .botoesAparecem{
     opacity: 1;
@@ -144,17 +140,15 @@
   
   
   .figuras{
-      --transition: 0.5s;
+    --transition: 0.5s;
     width: inherit;
     height: inherit;
     --brightness: 1;
     --grayscale: 0.8;
     --blur: 1.1px;
     transition: flex var(--transition),  filter var(--transition);
-    height: 100%;
     filter: grayscale(var(--grayscale)) brightness(var(--brightness)) blur(var(--blur));
     object-fit: cover;
-    overflow: hidden;
     flex: 1;
     opacity: 1;
     cursor:pointer;
@@ -191,7 +185,6 @@
     opacity: 0;
     width: 80px;
     height: 30px;
-    opacity: 0;
     cursor:pointer;
   }
 

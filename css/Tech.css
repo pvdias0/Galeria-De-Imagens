@@ -57,12 +57,12 @@
 
 
     
-    #bodyVeiculos{
+    #bodyTech{
     margin: 0px;
     background-color: #010109 ;
     }
     
-    #secaoVeiculos{
+    #secaoTech{
     display: flex;
     flex-direction: column;
     background-image: url('https://images.pexels.com/photos/1921326/pexels-photo-1921326.jpeg?auto=compress&cs=tinysrgb&w=600');
@@ -88,7 +88,7 @@
     }
     
     
-    #tituloCarros{
+    #tituloTech{
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
@@ -100,7 +100,7 @@
       background-color: rgba(1, 1, 9,0.7);
     }
     
-    #imagensVeiculos{
+    #imagensTech{
       height: auto;
       width: 100%;
       display: flex;
@@ -109,7 +109,7 @@
       justify-content: space-evenly;
     }
     
-    .imagensCars{
+    .imagensTech{
       width: 400px;
       height: 300px;
       margin: 15px;
@@ -118,11 +118,11 @@
       display: inline-block;
     }
 
-    .imagensCars-hover{
+    .imagensTech-hover{
         transform: scale(1.1);
     }
     
-    .imagensCars:hover .botoesAparecem{
+    .imagensTech:hover .botoesAparecem{
       opacity: 1;
     }
 

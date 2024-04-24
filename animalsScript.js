@@ -1,5 +1,7 @@
+
+// função do hover nas imagens pelo botão abrir
 const botoes = document.querySelectorAll('.botoesAparecem');
-const links = document.querySelectorAll('.botao-link');
+
 botoes.forEach((botao) => {
     botao.addEventListener('mouseover', function () {
     var elementoPai = this.parentNode;
@@ -14,6 +16,8 @@ botoes.forEach((botao) => {
 
 })
 
+
+// Função do botão de voltar ao topo
 document.addEventListener('DOMContentLoaded', function(){
     const botaoSeta = document.querySelector('#botaoSeta');
     const ancoraSeta = document.getElementById('animalSection');
