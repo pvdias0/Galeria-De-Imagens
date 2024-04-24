@@ -54,6 +54,16 @@
   text-decoration: none;
   color: white;
 }
+#show{
+  position: fixed;
+  width: 700px;
+  height: 500px;
+  background-color: #051c38;
+  z-index: 10;
+  transform: translate(44%);
+  top: 10%;
+  display: none;
+}
 
 .itemMenu:hover{
   color: gray;

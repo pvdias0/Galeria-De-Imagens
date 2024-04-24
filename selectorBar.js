@@ -1,8 +1,9 @@
 let barSelector = document.getElementById("selectorBar");
-barSelector.addEventListener("scroll", onMove)
 let closeButton = document.getElementById("closeButton");
 var downloadList = [];
+var alreadyCOllected = false;
 let downloadButton = document.getElementById("download");
+
 
 closeButton.addEventListener("click", fnc =>{
     barSelector.style.display = "none";
@@ -12,6 +13,7 @@ document.addEventListener("click", function(ev){
         barSelector.style.display = "block";
     }
 });
+
 
 downloadButton.addEventListener("click", fnc =>{
     for(let i=0;i<downloadList.length;i++){
@@ -27,14 +29,13 @@ downloadButton.addEventListener("click", fnc =>{
         })
     }
 })
-function onMove(){
-    window.scrollBy(100,100);
-}
-document.addEventListener("click", function(){
-    downloadList.length >= 1 ? closeButton.innerHTML = "Remover" : closeButton.innerHTML = "Fechar";
-})
+
 document.addEventListener("click",function(ev){
     let event = ev.target;
+    if(event.parentNode.id == "selectorBar"){
+        event.parentNode.removeChild(event);
+        downloadList.pop(event.src);
+    }
     if (event.classList.contains("figuras") && !downloadList.includes(event.src)){
         let src = ev.target.src;
         let img = barSelector.appendChild(document.createElement("img"));
