@@ -12,7 +12,18 @@
     overflow-y: auto;
     cursor: pointer;
     border: 1px solid white;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
 
+  }
+  #divBotoesFeW{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 30px ;
+    width: 100%;
+  
   }
   #closeButton{
     width: 70px;
@@ -21,7 +32,7 @@
     color: white;
     position: relative;
     transform: translate(1%);
-    margin-bottom: 30px ;
+   
   }
   #download{
     width: -200px;
