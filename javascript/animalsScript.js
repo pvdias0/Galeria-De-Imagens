@@ -1,5 +1,3 @@
-
-// função do hover nas imagens pelo botão abrir
 const botoes = document.querySelectorAll('.botoesAparecem');
 
 botoes.forEach((botao) => {
@@ -16,8 +14,6 @@ botoes.forEach((botao) => {
 
 })
 
-
-// Função do botão de voltar ao topo
 document.addEventListener('DOMContentLoaded', function(){
     const botaoSeta = document.querySelector('#botaoSeta');
     const ancoraSeta = document.getElementById('animalSection');
