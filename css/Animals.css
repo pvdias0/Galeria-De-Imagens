@@ -10,7 +10,7 @@
   justify-content: space-between;
   align-items: center;
   background-color: rgba(3,10,20,0.7);
-  margin-top: -50px;
+  margin-top: -20px;
   z-index: 1;
 }
 
@@ -75,6 +75,11 @@
   margin: 0px;
   background-color: #010109 ;
   overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  
+  
   }
   
   #animalSection{
@@ -82,7 +87,7 @@
   flex-direction: column;
   flex-wrap: nowrap;
   align-content: center;
-  height: 550px;
+  height: 600px;
   background-image: url("https://images.unsplash.com/photo-1504006833117-8886a355efbf?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
   background-repeat: no-repeat;
   background-size: cover;
@@ -91,7 +96,7 @@
   align-items: center;
   width: 100%;
   background-attachment: fixed;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   }
 
   #filtroSecao{
@@ -115,13 +120,29 @@
     align-content: center;
     background-color: rgba(1, 1, 9,0.7);
   }
+
+  #divSelectButton{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+
   #selectButton{
+    border: 0px;
     width: 100px;
     height: 40px;
-    top: 93vh;
-    left: 500px;
-    position: relative;
-    transform: translate(50%);
+    background-color: #051c38;
+    color: beige;
+    border-radius: 13px;
+    box-shadow: 3px 3px 7px black ;
+  }
+
+  #selectButton:hover{
+    box-shadow: 0px 0px 10px wheat;
+    transform: scale(1.1);
   }
   #animalImageCollection{
     height: auto;

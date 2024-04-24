@@ -10,7 +10,7 @@ closeButton.addEventListener("click", fnc =>{
 });
 document.addEventListener("click", function(ev){
     if(ev.target.textContent == "Selecionar"){
-        barSelector.style.display = "block";
+        barSelector.style.display = "flex";
     }
 });
 
@@ -42,6 +42,7 @@ document.addEventListener("click",function(ev){
         img.src = src;
         img.style.width = "100px";
         img.style.height = "100px";
+        img.style.border = "1px solid beige"
         downloadList.push(src);
     }
 })
