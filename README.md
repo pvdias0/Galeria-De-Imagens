@@ -2,6 +2,7 @@
 # Galeria de Imagens
 
 Um pequeno projeto para a disciplina de programação web.
+
 https://pvdias0.github.io/Galeria-De-Imagens/
 
 ## Autores
